@@ -1,7 +1,6 @@
 # NLXKernel
 ###### By PlanetAaron and 0xFF
 NLX is a lightweight unix-like kernel made for x86 processors (support for other architextures is planned)
-Only 32 bit is officially supported right now. 
 
 
 ## Compiling
@@ -43,7 +42,9 @@ You don't have to use qemu to test it but, it's just really nice not to have to 
 - [x] Sending data to I/O ports
 - [x] Writing to framebuffer
 - [ ] Serial Driver
+- [ ] Enter Protected Mode
+- [ ] Enter Long Mode (64 bit support)
 - [ ] Keyboard Driver
 - [ ] Filesystem Driver 
 - [ ] Basic Userland support
-- [ ] Basic Bootloader
+- [ ] Basic Bootloader to load it 
