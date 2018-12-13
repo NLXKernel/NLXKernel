@@ -38,10 +38,10 @@ Then load the kernel with qemu-system-i386 (if you have used qemu in the past th
 You don't have to use qemu to test it but, it's just really nice not to have to hassle with getting a bootloader to work. 
 
 ## TODO
-- [x] Call Stack
-- [x] Sending data to I/O ports
-- [x] Writing to framebuffer
-- [x] Serial Driver
+- [X] Call Stack
+- [X] Sending data to I/O ports
+- [X] Writing to framebuffer
+- [X] Serial Driver
 - [ ] Enter Protected Mode
 - [ ] Enter Long Mode (64 bit support)
 - [ ] Keyboard Driver
