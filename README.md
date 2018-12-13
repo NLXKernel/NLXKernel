@@ -41,7 +41,7 @@ You don't have to use qemu to test it but, it's just really nice not to have to 
 - [x] Call Stack
 - [x] Sending data to I/O ports
 - [x] Writing to framebuffer
-- [ ] Serial Driver
+- [x] Serial Driver
 - [ ] Enter Protected Mode
 - [ ] Enter Long Mode (64 bit support)
 - [ ] Keyboard Driver
