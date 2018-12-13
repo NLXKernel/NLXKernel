@@ -5,7 +5,7 @@ CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
 	 -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c -I./include
 LDFLAGS := -T link.ld -melf_i386
 ASFLAGS := -f elf
-OBJ = source/main.o asm/io.o asm/loader.o source/framebuffer.o source/utils.o
+OBJ = source/main.o asm/io.o asm/loader.o source/framebuffer.o source/utils.o source/serial.o
 
 all: kernel.elf
 

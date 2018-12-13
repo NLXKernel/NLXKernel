@@ -12,10 +12,10 @@ void fb_write(unsigned int location, char c, unsigned char fgcolor, unsigned cha
 
 void fb_move_cursor(unsigned short pos)
 {
-	iosend(FB_COMMAND_PORT, FB_HIGH_BYTE);
-	iosend(FB_DATA_PORT, ((pos >> 8) & 0x00FF));
-	iosend(FB_COMMAND_PORT, FB_LOW_BYTE);
-	iosend(FB_DATA_PORT, pos & 0x00FF);
+	outb(FB_COMMAND_PORT, FB_HIGH_BYTE);
+	outb(FB_DATA_PORT, ((pos >> 8) & 0x00FF));
+	outb(FB_COMMAND_PORT, FB_LOW_BYTE);
+	outb(FB_DATA_PORT, pos & 0x00FF);
 }
 
 void display_print_string(char* buf, unsigned int fgcolor, unsigned int bgcolor)
