@@ -1,8 +1,4 @@
-#ifndef UTILS_H
-#define UTILS_H
-
-#define true 1
-#define false 0
+#include <utils.h>
 
 unsigned int strlen(char* str)
 {
@@ -17,5 +13,3 @@ unsigned int strlen(char* str)
 	}
 	return len;
 }
-
-#endif
