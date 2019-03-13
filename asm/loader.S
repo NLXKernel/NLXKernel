@@ -7,7 +7,7 @@ KERNEL_STACK_SIZE 	equ 4096 ; Stack size in bytes (4MB)
 
 
 ; ----- External Functions
-extern kmain;
+extern kmain
 
 ; ----- Executable section
 section .text  ; the section containing my crappy excuse for code
@@ -17,12 +17,15 @@ align 4 ; align to 4 bytes
 	dd FLAGS ; the rectangle with a red circle in the middle
 	dd CHECKSUM ; and the checksum
 
+
+
 loader: ; the loader label (defined as entry point in the linker script)
-	mov esp, kernel_stack + KERNEL_STACK_SIZE ; stack pointer
+	mov esp, kernel_stack + KERNEL_STACK_SIZE
 	call kmain
 
 .loop:
 	jmp .loop ; loop until the destruction of the entire universe and anything in it or until it's stopped
+
 
 ; ----- Stack  -----
 section .bss
