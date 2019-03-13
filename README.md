@@ -42,7 +42,7 @@ You don't have to use qemu to test it but, it's just really nice not to have to 
 - [X] Sending data to I/O ports
 - [X] Writing to framebuffer
 - [X] Serial Driver
-- [ ] Enter Protected Mode
+- [X] Enter Protected Mode
 - [ ] Enter Long Mode (64 bit support)
 - [ ] Keyboard Driver
 - [ ] Filesystem Driver 
